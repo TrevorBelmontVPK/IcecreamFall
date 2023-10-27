@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+    <script src="Index.js"></script>
+</head>
+<body>
+    <label>Number of Scoops<input type="number" id="scoops" value="1"></label>
+    <div id="containerType">
+        <label><input type="radio" name="containerType" id="coneRadio" value="Cone">Cone</label>
+        <label><input type="radio" name="containerType" id="cupRadio" checked>Cup</label>
+    </div>
+    <fieldset id="toppings">
+        <legend>Toppings</legend>
+        <label><input type="checkbox" id="sprinkles">Sprinkles ($.50)</label>
+        <label><input type="checkbox" id="whip">Whip ($.50)</label>
+        <label><input type="checkbox" id="fudge">Hot Fudge ($.50)</label>
+        <label><input type="checkbox" id="cherry">Cherry ($.50)</label>
+    </fieldset>
+    <button id="submitOrderButton">Submit Order</button>
+    <table>
+        <tr>
+            <th>Base Price</th>
+            <td>$<span id="basePriceSpan">0.00</span></td>
+        </tr>
+        <tr>
+            <th>Tax</th>
+            <td>$<span id="taxSpan">0.00</span></td>
+        </tr>
+        <tr>
+            <th>Total Due</th>
+            <td>$<span id="totalDueSpan">0.00</span></td>
+        </tr>
+    </table>
+</body>
+</html>
